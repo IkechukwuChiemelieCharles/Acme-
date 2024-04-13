@@ -768,6 +768,22 @@ video {
   margin-left: 18rem;
 }
 
+.ml-32 {
+  margin-left: 8rem;
+}
+
+.ml-16 {
+  margin-left: 4rem;
+}
+
+.ml-12 {
+  margin-left: 3rem;
+}
+
+.mt-40 {
+  margin-top: 10rem;
+}
+
 .flex {
   display: flex;
 }
@@ -1181,6 +1197,71 @@ video {
   bottom: 24rem;
 }
 
+.before\:top-60::before {
+  content: var(--tw-content);
+  top: 15rem;
+}
+
+.before\:-top-12::before {
+  content: var(--tw-content);
+  top: -3rem;
+}
+
+.before\:-top-20::before {
+  content: var(--tw-content);
+  top: -5rem;
+}
+
+.before\:-top-96::before {
+  content: var(--tw-content);
+  top: -24rem;
+}
+
+.before\:bottom-2::before {
+  content: var(--tw-content);
+  bottom: 0.5rem;
+}
+
+.before\:bottom-10::before {
+  content: var(--tw-content);
+  bottom: 2.5rem;
+}
+
+.before\:bottom-52::before {
+  content: var(--tw-content);
+  bottom: 13rem;
+}
+
+.before\:bottom-64::before {
+  content: var(--tw-content);
+  bottom: 16rem;
+}
+
+.before\:top-80::before {
+  content: var(--tw-content);
+  top: 20rem;
+}
+
+.before\:right-0::before {
+  content: var(--tw-content);
+  right: 0px;
+}
+
+.before\:left-52::before {
+  content: var(--tw-content);
+  left: 13rem;
+}
+
+.before\:right-20::before {
+  content: var(--tw-content);
+  right: 5rem;
+}
+
+.before\:right-52::before {
+  content: var(--tw-content);
+  right: 13rem;
+}
+
 .before\:translate-x-2::before {
   content: var(--tw-content);
   --tw-translate-x: 0.5rem;
@@ -1382,6 +1463,21 @@ video {
   .sm\:text-left {
     text-align: left;
   }
+
+  .sm\:before\:bottom-96::before {
+    content: var(--tw-content);
+    bottom: 24rem;
+  }
+
+  .sm\:before\:bottom-72::before {
+    content: var(--tw-content);
+    bottom: 18rem;
+  }
+
+  .sm\:before\:bottom-64::before {
+    content: var(--tw-content);
+    bottom: 16rem;
+  }
 }
 
 @media (min-width: 768px) {
@@ -1399,6 +1495,26 @@ video {
 
   .md\:hidden {
     display: none;
+  }
+
+  .md\:px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
+  .md\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  .md\:before\:bottom-72::before {
+    content: var(--tw-content);
+    bottom: 18rem;
+  }
+
+  .md\:before\:bottom-1::before {
+    content: var(--tw-content);
+    bottom: 0.25rem;
   }
 }
 
