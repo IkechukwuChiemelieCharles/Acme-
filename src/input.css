@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* body {
+  background-color: aqua;
+} */
+@keyframes slideIn {
+  0% {
+    transform: "scaleY(0)"; /* Start position */
+  }
+  80% {
+    transform: "scaleY(1.2)"; /* middle position */
+  }
+  80% {
+    transform: "scaleY(1)"; /* End position */
+  }
+}
+
+/* Apply the animation to an element */
+#mobilemenu {
+  animation: slideIn ease-in-out; /* Animation name, duration, timing function */
+}

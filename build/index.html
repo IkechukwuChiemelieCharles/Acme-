@@ -4,14 +4,11 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="JS/main.js" defer></script>
     <title>Acme</title>
   </head>
   <body class="bg-black">
     
-    <section class="bg-teal-800 w-full h-14  flex justify-between items-center text-white fixed" >
-       
-        
+    <section class="bg-teal-800 w-full h-14  flex justify-between items-center text-white  lg:px-44 top-0 sticky z-40">
       <h1 class="text-white font-bold  ml-2 text-3xl "><a href="#hero">🚀 Acme Rockets</h1>
         </a>
         <button id="harmburgerbutton" class=" font-extrabold mr-2 text-3xl md:hidden"> &#9776;</button>
@@ -19,10 +16,9 @@
             <a class="mx-4" href="#rockets"> Our Rockets</a>
             <a class="mx-4" href="#testimonials"> Our Testimonials</a>
             <a class="mx-4" href="#contact"> Contact Us</a>
-        </nav>
-        
+        </nav> 
     </section>
-        <div id="mobilemenu" class="  hidden md:hidden bg-white w-full min-h-screen  flex-col text-4xl top-0 items-center origin-top animate-open-menu sticky">
+        <div id="mobilemenu" class="  hidden  md:hidden bg-white w-full min-h-screen  flex-col text-4xl top-0 items-center origin-top sticky z-40">
             <button class="text-6xl self-end px-6"> &times</button>
             <nav class="flex flex-col min-h-screen items-center" aria-label="mobile"> 
                 <a href="#hero" class="w-full text-center py-4 hover:opacity-90"> Home</a>
@@ -33,15 +29,15 @@
             </nav>
            
         </div>
-    <div id="hero" class=" container overflow-hidden  max-w-7xl items-center lg:px-44">
-    <div class="flex flex-col items-center justify-center sm:flex sm:flex-row-reverse">
+    <div id="hero" class=" container overflow-hidden  max-w-7xl items-center lg:px-44 ">
+    <div class="flex flex-col items-center justify-center sm:flex sm:flex-row-reverse z-20">
             
-            <img class="w-52 mt-24 sm:w-80" src="./img/rocketdab.png" alt="">
+            <img id="imgdab" class="w-52 mt-24 sm:w-80 z-1" src="./img/rocketdab.png" alt="">
             <div class="sm:mt-24 ">
-            <h1 class="text-white text-5xl  my-44 text-center sm:text-left font-bold text-wrap px-9 -mt-1">
+            <h1 id="boldly" class="text-white text-5xl  my-44 text-center sm:text-left font-bold text-wrap px-9 -mt-1 z-2">
                 We Boldly Go <span class="text-blue-700 ">Where No Rocket </span>Has Gone Before...
             </h1>
-            <p class=" text-center sm:text-left text-slate-600 font-medium text-2xl px-9 -mt-40 sm:text-wrap">We're building rockets for the next century today. From the moon to Mars, Jupiter and beyond...
+            <p id="think" class=" text-center sm:text-left text-slate-600 font-medium text-2xl px-9 -mt-40 sm:text-wrap z-3">We're building rockets for the next century today. From the moon to Mars, Jupiter and beyond...
                 <br>
                  Think Acme Rockets. </p>
                 </div>
@@ -83,23 +79,25 @@
     
 
 <div class=" flex flex-col items-center">
-<hr class="bg-white w-80 ml-5 my-24  ">
-    <h2 id="testimonials" class="text-white text-4xl  my-44 text-center font-bold text-wrap px-9 -mt-1"> Testimonials</h2></div>
-<blockquote class=" flex items-center  flex-col -mt-20">
-    <p class="text-slate-600 text-left text-2xl mt-20 px-5" >
-        <span class="text-white">&#8220;</span> Acme has always been there for me. Their Explorer rocket arrived in a wooden crate as expected. Lifelong customer! A++ shopping experience! <span class="text-white">&#8221;</span>
-        <p class="text-white ml-20 mt-10 text-xl text-nowrap sm:ml-96"> —Wile E. Coyote, Genius</p>
+<hr class="bg-white w-80 ml-5 my-48  ">
+    <h2 id="testimonials" class="text-white text-4xl  my-28 text-center font-bold text-wrap px-9 -mt-1"> Testimonials</h2></div>
+<blockquote class=" flex items-center  flex-col -mt-20 relative">
+    <p class="text-slate-600 text-left text-2xl mt-20 px-5 before:content-['\201C'] before:font-serif before:absolute before:top-0 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2  after:content-['\201D'] after:font-serif after:absolute after:-bottom-50 after:right-5 after:text-9xl after:text-white after:opacity-25 after:transform after:translate-x-2 after:translate-y-2" >
+        Acme has always been there for me. Their Explorer rocket arrived in a wooden crate as expected. Lifelong customer! A++ shopping experience! 
     </p>
-    <p class="text-slate-600 text-left text-2xl mt-20 px-5" >
-        <span class="text-white">&#8220;</span> The Acme Adventurer Rocket has thwarted my Illudium Q-36 Explosive Space Modulator on several occassions. This makes me very, very angry! Nevertheless, K-9 and I have awarded Acme the Martian contract for space exploration rockets based on Acme's quality and sturdy designs.
-
-        <span class="text-white">&#8221;</span>
-        <p class="text-white ml-14 mt-10 text-xl text-nowrap sm:ml-96"> —Marvin the Martian & K-9
+        <p class="text-white ml-52 mt-10 text-xl text-nowrap sm:ml-96"> —Wile E. Coyote, Genius</p>
+   
+   
+        <p class="text-slate-600 text-left text-2xl mt-20 px-5 before:content-['\201C'] before:font-serif before:absolute before:top-72 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2  after:content-['\201D'] after:font-serif after:absolute after:-bottom-50 after:right-5 after:text-9xl after:text-white after:opacity-25 after:transform after:translate-x-2 after:translate-y-2" >
+         The Acme Adventurer Rocket has thwarted my Illudium Q-36 Explosive Space Modulator on several occassions. This makes me very, very angry! Nevertheless, K-9 and I have awarded Acme the Martian contract for space exploration rockets based on Acme's quality and sturdy designs.
+        </p>
+        
+        <p class="text-white ml-48 mt-10 text-xl text-nowrap sm:ml-96"> —Marvin the Martian & K-9
         </p>
     </p>
-    <p class="text-slate-600 text-left text-2xl mt-20 px-5" >
-        <span class="text-white">&#8220;</span> I knew I not only wanted — I needed — Acme's Infinity Rocket for my mission in space. Acme delievered in one day! Nothing says Take me to your leader like Acme's Infinity Rocket! 💯 <span class="text-white">&#8221;</span>
-        <p class="text-white  mt-10 text-xl  ml-36 sm:ml-96"> —Buzz Lightyear
+    <p class="text-slate-600 text-left text-2xl mt-20 px-5 before:content-['\201C'] before:font-serif before:absolute before:bottom-96 before:left-0 before:text-9xl before:text-white before:opacity-25 before:transform before:translate-x-2 before:translate-y-2  after:content-['\201D'] after:font-serif after:absolute after:-bottom-50 after:right-5 after:text-9xl after:text-white after:opacity-25 after:transform after:translate-x-2 after:translate-y-2" >
+         I knew I not only wanted — I needed — Acme's Infinity Rocket for my mission in space. Acme delievered in one day! Nothing says Take me to your leader like Acme's Infinity Rocket! 💯 
+        <p class="text-white  mt-10 text-xl  ml-72 sm:ml-96"> —Buzz Lightyear
         </p>
     </p>
     <hr class="bg-white w-80 ml-5 my-24 ">
@@ -137,5 +135,9 @@
 
 </footer>
 
+<script src="JS/main.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+     
+</script>
   </body>
 </html>
