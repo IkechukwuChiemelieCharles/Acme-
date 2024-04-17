@@ -17,6 +17,7 @@ const harmburgerbutton = document.querySelector("#harmburgerbutton");
 const toggleMenu = () => {
   sideBar.classList.toggle("hidden");
   sideBar.classList.toggle("flex");
+  harmburgerbutton.classList.toggle("toggle-btn");
 };
 harmburgerbutton.addEventListener("click", toggleMenu);
 sideBar.addEventListener("click", toggleMenu);

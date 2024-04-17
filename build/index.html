@@ -11,15 +11,19 @@
     <section class="bg-teal-800 w-full h-14  flex justify-between items-center text-white  lg:px-44 top-0 sticky z-40">
       <h1 class="text-white font-bold  ml-2 text-3xl "><a href="#hero">🚀 Acme Rockets</h1>
         </a>
-        <button id="harmburgerbutton" class=" font-extrabold mr-2 text-3xl md:hidden"> &#9776;</button>
+        <button id="harmburgerbutton" class=" font-extrabold text-3xl md:hidden cursor-pointer mr-20 "> 
+            <!-- &#9776; -->
+        <div class="content bg-white w-8 h-1 rounded absolute top-4 mt-2 ml-7 transition-all duration-500 before:content-[''] before:bg-white before:w-8 before:h-1 before:rounded before:absolute before:-translate-x-4 
+        before:transition-all before:duration-500 before:-translate-y-3 after:content-[''] after:bg-white after:w-8 after:h-1 after:rounded after:absolute after:-translate-x-4 after:translate-y-3 after:transition-all after:duration-500"></div>
+    </button> 
         <nav class=" hidden md:block text-white ">
             <a class="mx-4" href="#rockets"> Our Rockets</a>
             <a class="mx-4" href="#testimonials"> Our Testimonials</a>
             <a class="mx-4" href="#contact"> Contact Us</a>
         </nav> 
     </section>
-        <div id="mobilemenu" class="  hidden  md:hidden bg-white w-full min-h-screen  flex-col text-4xl top-0 items-center origin-top sticky z-40">
-            <button class="text-6xl self-end px-6"> &times</button>
+        <div id="mobilemenu" class="  hidden  md:hidden bg-black w-full text-white min-h-screen  flex-col text-4xl top-0 items-center origin-top sticky z-40">
+            <!-- <button class="text-6xl self-end px-6"> &times</button> -->
             <nav class="flex flex-col min-h-screen items-center" aria-label="mobile"> 
                 <a href="#hero" class="w-full text-center py-4 hover:opacity-90"> Home</a>
                 <a href="#rockets" class="w-full text-center py-4 hover:opacity-90"> Our Rockets</a>
